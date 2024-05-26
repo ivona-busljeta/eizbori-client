@@ -6,6 +6,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min"
 import "bootstrap/dist/css/bootstrap.min.css";
 import {PersonsView} from "./components/person/PersonsView.jsx";
 import {NavBar} from "./components/NavBar.jsx";
+import {ElectionsView} from "./components/election/ElectionsView.jsx";
 
 const router = createBrowserRouter([
     {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     {
         path: "/registar",
         element: <PersonsView/>
+    },
+    {
+        path: "/izbori",
+        element: <ElectionsView/>
     }
 ]);
 
